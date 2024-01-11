@@ -6,7 +6,6 @@ namespace AdaTech.AdaShop.Domain.Models.Order
     {
         public string ID { get; private set; }
 
-
         public Customer(string name, string address , string CPF, string email)
             :base(name, address, CPF, email)
         {

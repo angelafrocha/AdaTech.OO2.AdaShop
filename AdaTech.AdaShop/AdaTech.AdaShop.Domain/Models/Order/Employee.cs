@@ -13,5 +13,7 @@ namespace AdaTech.AdaShop.Domain.Models.Order
         {
             ID = Guid.NewGuid().ToString();
         }
+
+        
     }
 }

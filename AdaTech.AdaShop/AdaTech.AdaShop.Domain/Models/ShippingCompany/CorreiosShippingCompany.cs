@@ -9,6 +9,11 @@ namespace AdaTech.AdaShop.Domain.Models.ShippingCompany
 
         public override decimal CalculeShipping(OrderAggregate order)
         {
+            return order.OrderItem.Count * 10;
+        }
+
+        public override string TrackPackage(string trackingNumber)
+        {
             throw new NotImplementedException();
         }
     }

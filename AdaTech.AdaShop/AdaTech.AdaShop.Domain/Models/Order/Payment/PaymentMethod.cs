@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdaTech.AdaShop.Domain.Models.Order
+namespace AdaTech.AdaShop.Domain.Models.Order.Payment
 {
     public abstract class PaymentMethod
     {
-        protected string HolderName { get; private set;}
+        protected string HolderName { get; private set; }
 
         public PaymentMethod(string holderName)
         {

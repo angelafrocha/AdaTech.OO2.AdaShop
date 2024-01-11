@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdaTech.AdaShop.Domain.Models.Order
+namespace AdaTech.AdaShop.Domain.Models.Order.Payment
 {
-    public class DebitCard: PaymentMethod
+    public class DebitCard : PaymentMethod
     {
         public string CardNumber { get; private set; }
         public string ExpiryDate { get; private set; }

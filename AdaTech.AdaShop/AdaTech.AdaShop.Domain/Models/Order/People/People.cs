@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdaTech.AdaShop.Domain.Models.Order
+namespace AdaTech.AdaShop.Domain.Models.Order.People
 {
     public abstract class People
     {

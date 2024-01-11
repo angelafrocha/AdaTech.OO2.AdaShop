@@ -2,24 +2,16 @@
 
 namespace AdaTech.AdaShop.Domain.Models.Order
 {
-    public class Customer : IEntity
+    public class Customer : People, IEntity
     {
         public string ID { get; private set; }
-        public string Name { get; private set; }
-        public string Address { get; private set; }
-        public string CPF { get; private set; }
-        public string Email { get; private set; }
-        public string DefaultPayment { get; private set; }
 
-        public Customer(string name, string adress , string cpf, string email, string defaultPayment)
+
+        public Customer(string name, string address , string CPF, string email)
+            :base(name, address, CPF, email)
         {
-
             ID = Guid.NewGuid().ToString();
-            Name = name;
-            Address = adress;
-            CPF = cpf;
-            Email = email;
-            DefaultPayment = defaultPayment;
+
         }
     }
 

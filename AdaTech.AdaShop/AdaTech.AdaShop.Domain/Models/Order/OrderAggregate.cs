@@ -16,8 +16,8 @@ namespace AdaTech.AdaShop.Domain.Models.Order
         }
 
         public string ID { get; private set; }
-        public List<OrderItem> OrderItem { get; private set; } = new();
-        public InfoPayments? InfoPayments { get; private set; }
+        public List<OrderItem> OrderItem { get; set; } = new(); //publico? privado?
+        public InfoPayments? InfoPayments { get; set; }
 
         //Podemos ter um customer ou não.
         //Pode ser uma venda online ou na loja
@@ -36,7 +36,7 @@ namespace AdaTech.AdaShop.Domain.Models.Order
         }
         public DateTime OrderDate { get; private set; }
         public DateTime ModifyDate { get; private set; }
-        public Employee? Employee { get; private set; }
+        public Employee? Employee { get; set; }
         public ShippingCompany ShippingCompany { get; private set; }
     }
 }
